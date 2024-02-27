@@ -95,3 +95,50 @@ Projekti link: [Lennujaam](https://timurdenisenko22.thkit.ee/lennujaam/lennukasu
 
 <!-- Kood selgitused -->
 ## Kood selgitused
+### Kasutaja leht
+```
+if (isset($_REQUEST["kustutareisitaja"])) {
+    $paring_select = $yhendus->prepare("SELECT reisijate_arv FROM lend WHERE id=?");
+    $paring_select->bind_param("i", $_REQUEST["kustutareisitaja"]);
+    $paring_select->execute();
+    $paring_select->bind_result($kohtade_arv_current);
+    $paring_select->fetch();
+    $paring_select->close();
+
+    if ($kohtade_arv_current != $nool) {
+        global $yhendus;
+        $kask = $yhendus->prepare("UPDATE lend SET reisijate_arv=reisijate_arv-1 WHERE id=?");
+        $kask->bind_param("i", $_REQUEST["kustutareisitaja"]);
+        $kask->execute();
+    }
+}
+```
+Võtame tabelist reisijate arvu ja kontrollime, kas pärast kustutamist jääb reisijate arv alla nulli, kui ei, siis vähendame reisijate arvu 1 võrra
+<br><br>
+```
+if (isset($_REQUEST["lisareisitaja"])) {
+    $paring_select = $yhendus->prepare("SELECT reisijate_arv FROM lend WHERE id=?");
+    $paring_select->bind_param("i", $_REQUEST["lisareisitaja"]);
+    $paring_select->execute();
+    $paring_select->bind_result($kohtade_arv_current);
+    $paring_select->fetch();
+    $paring_select->close();
+
+    $paring_select = $yhendus->prepare("SELECT kohtade_arv FROM lend WHERE id=?");
+    $paring_select->bind_param("i", $_REQUEST["lisareisitaja"]);
+    $paring_select->execute();
+    $paring_select->bind_result($initial_kohtade_arv);
+    $paring_select->fetch();
+    $paring_select->close();
+
+    if ($kohtade_arv_current < $initial_kohtade_arv) {
+        $kask = $yhendus->prepare("UPDATE lend SET reisijate_arv=reisijate_arv+1 WHERE id=?");
+        $kask->bind_param("i", $_REQUEST["lisareisitaja"]);
+        $kask->execute();
+        $kask->close();
+    }
+}
+```
+Tabelist võtame praeguse reisijate arvu ja maksimaalse võimaliku. Järgmisena kontrollime, et praegune reisijate arv ei ületaks maksimaalset võimalikku ja sel juhul suurendame reisijate arvu 1 võrra
+<br><br>
+<p align="right">(<a href="#readme-top">tagasi üles</a>)</p>
