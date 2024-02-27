@@ -10,10 +10,12 @@
   </ol>
 </details>
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+<!-- Projekti kohta -->
+## Projekti kohta
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![pilt](https://github.com/TimurDenisenko/lennujaam/assets/120181244/0c0c61b0-61ca-4d14-ae88-6926a4867617)
+
+
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
