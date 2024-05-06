@@ -144,8 +144,8 @@ Tabelist võtame praeguse reisijate arvu ja maksimaalse võimaliku. Järgmisena 
 <br><br>
 <p align="right">(<a href="#readme-top">tagasi üles</a>)</p>
 
-<!-- Ulesanded -->
-## Ülesanded
+<!-- Ülesanded -->
+## Ulesanded
 
   <ol>
     <li>
@@ -164,3 +164,4 @@ Tabelist võtame praeguse reisijate arvu ja maksimaalse võimaliku. Järgmisena 
       Muutke "Lennuk on endiselt õhus" väärtuseks "Lennuk pole ikka veel lendu lõpetanud"
     </li>
   </ol>
+  <p align="right">(<a href="#readme-top">tagasi üles</a>)</p>
