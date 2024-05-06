@@ -163,5 +163,8 @@ Tabelist võtame praeguse reisijate arvu ja maksimaalse võimaliku. Järgmisena 
     <li>
       Muutke "Lennuk on endiselt õhus" väärtuseks "Lennuk pole ikka veel lendu lõpetanud"
     </li>
+    <li>
+      Õiged failid on lennujaama kaustas. Eemaldage mittevajalikud dubleerivad failid.
+    </li>
   </ol>
   <p align="right">(<a href="#readme-top">tagasi üles</a>)</p>
