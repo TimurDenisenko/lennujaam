@@ -71,11 +71,11 @@ if (isset($_REQUEST["lop"])) {
     ?>
         <table id="lennujaam">
             <tr>
-                <th>Lennu number</th>
+                <th>Väljumisaeg</th>
                 <th>Kohtade arv</th>
                 <th>Väljumiskoht</th>
                 <th>Sihtkoht</th>
-                <th>Väljumisaeg</th>
+                <th>Lennu number</th>
                 <th>Lõpetatud</th>
                 <th>Kestvus</th>
                 <th>Tegevus</th>
@@ -103,11 +103,11 @@ if (isset($_REQUEST["lop"])) {
 
             while ($paring->fetch()) {
                 echo "<tr>";
-                echo "<td>$lennu_nr</td>";
+                echo "<td>$valjumisaeg</td>";
                 echo "<td>$kohtade_arv</td>";
                 echo "<td>$ots</td>";
                 echo "<td>$siht</td>";
-                echo "<td>$valjumisaeg</td>";
+                echo "<td>$lennu_nr</td>";
                 
                 // Kuvab lõpetamise kuupäeva ja kestvuse, kui lend on lõpetatud
                 if ($lopetatud != "0000-00-00 00:00:00") {
