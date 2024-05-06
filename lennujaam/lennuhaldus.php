@@ -115,8 +115,8 @@ if (isset($_REQUEST["lop"])) {
                     $tundid = round($kestvus / 60,2);
                     echo "<td>$tundid tundit</td>";
                 } else {
-                    echo "<td class='polet'>Lennuk on endiselt õhus</td>";
-                    echo "<td class='polet'>Lennuk on endiselt õhus</td>";
+                    echo "<td class='polet'>Lennuk pole ikka veel lendu lõpetanud</td>";
+                    echo "<td class='polet'>Lennuk pole ikka veel lendu lõpetanud</td>";
                 }
 
                 // Kuvab kustutamise ja lõpetamise vormi
