@@ -4,7 +4,6 @@
   <img src="https://eturbonews.com/cdn-cgi/image/width=1212,height=683,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2024/01/0-62-810x456.jpg">
 </div>
 <!-- SISUKORD -->
-<details>
   <summary>Sisukord</summary>
   <ol>
     <li>
@@ -22,8 +21,10 @@
     <li>
       <a href="#kood-selgitused">Kood selgitused</a>
     </li>
+    <li>
+      <a href="#ulesanded">Ülesanded</a>
+    </li>
   </ol>
-</details>
 
 
 <!-- Projekti kohta -->
@@ -142,3 +143,24 @@ if (isset($_REQUEST["lisareisitaja"])) {
 Tabelist võtame praeguse reisijate arvu ja maksimaalse võimaliku. Järgmisena kontrollime, et praegune reisijate arv ei ületaks maksimaalset võimalikku ja sel juhul suurendame reisijate arvu 1 võrra
 <br><br>
 <p align="right">(<a href="#readme-top">tagasi üles</a>)</p>
+
+<!-- Ulesanded -->
+## Ülesanded
+
+  <ol>
+    <li>
+      Muutke tabeli päise värvi
+    </li>
+    <li>
+      Muutke tabeli esiletõstmise värvi
+    </li>
+    <li>
+      Muutke päise animatsiooni värvi
+    </li>
+    <li>
+      Muutke tabeli järjekorda
+    </li>
+    <li>
+      Muutke "Lennuk on endiselt õhus" väärtuseks "Lennuk pole ikka veel lendu lõpetanud"
+    </li>
+  </ol>
