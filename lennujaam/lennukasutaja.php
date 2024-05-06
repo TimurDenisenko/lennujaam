@@ -91,8 +91,8 @@ if (isset($_REQUEST["lisareisitaja"])) {
         <tr>
             <th>Lennu number</th>
             <th>Reisijate arv</th>
-            <th>Väljumiskoht</th>
             <th>Sihtkoht</th>
+            <th>Väljumiskoht</th>
             <th>Väljumisaeg</th>
 
             <?php
@@ -117,8 +117,8 @@ if (isset($_REQUEST["lisareisitaja"])) {
                     echo "<tr>";
                     echo "<td>$lennu_nr</td>";
                     echo "<td>$reisijate_arv</td>";
-                    echo "<td>$ots</td>";
                     echo "<td>$siht</td>";
+                    echo "<td>$ots</td>";
                     echo "<td>$valjumisaeg</td>";
 
                     if (isset($_SESSION['kasutaja'])) {
